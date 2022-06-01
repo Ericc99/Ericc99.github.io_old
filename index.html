@@ -20,6 +20,16 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ND3EESGQLX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ND3EESGQLX');
+</script>
+
   <meta property="og:type" content="website">
 <meta property="og:title" content="Nest of Eric">
 <meta property="og:url" content="http://example.com/index.html">
@@ -43,6 +53,15 @@
 
   <title>Nest of Eric</title>
   
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ND3EESGQLX"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-ND3EESGQLX');
+      }
+    </script>
 
 
 
@@ -243,10 +262,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2022-05-31 20:52:47 / Modified: 20:57:16" itemprop="dateCreated datePublished" datetime="2022-05-31T20:52:47+08:00">2022-05-31</time>
+              <time title="Created: 2022-05-31 20:52:47" itemprop="dateCreated datePublished" datetime="2022-05-31T20:52:47+08:00">2022-05-31</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-06-01 22:56:47" itemprop="dateModified" datetime="2022-06-01T22:56:47+08:00">2022-06-01</time>
+              </span>
 
           
 
@@ -259,9 +284,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="About-Me"><a href="#About-Me" class="headerlink" title="About Me"></a>About Me</h1><p>Hi, this is Eric, a Year 4 HKUST student whom seemingly majored in Electronics but rather have learned plenty of useless things about CS and the Web.</p>
-<p>If you would like to know me better you can go adn view my <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/haozhe-cui-36a860171">LinkedIn</a> page. Please forgive me for my foolish if you found my life experience so far has not been so expressive to you.</p>
-<p>Anyways, hope to meet you more.</p>
+          <h1 id="About-Me"><a href="#About-Me" class="headerlink" title="About Me"></a>About Me</h1><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=75% height=86 src="//music.163.com/outchain/player?type=2&id=421203025&auto=0&height=66"></iframe>
+
+<p>Hi, this is Eric, a Year 4 HKUST student whom seemingly majored in Electronics but rather have learned plenty of useless things in CS and the Web.</p>
+<p>If you would like to know me better you can go and view my <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/haozhe-cui-36a860171">LinkedIn</a> page. Please forgive my foolish if you found my life experience so far has not been so impressive to you.</p>
+<p>I started this blog to share what I know, and record my life. I know blog is already kinda old-school but it felt safe to know that I still have a little corner in this sofisticated world where I get to write my original stories. And also made me slowly aware that sometimes, it is not about you, sharing is all we can and all we need to do.</p>
 
       
     </div>

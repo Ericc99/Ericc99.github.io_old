@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -30,19 +30,19 @@
   gtag('config', 'G-ND3EESGQLX');
 </script>
 
-  <meta name="description" content="JavaScriptJavaScript教程 历史JS被设计出来的初衷是希望能够在静态HTML文件上添加一些动态效果，由网景公司开发。后由微软等公司联合制定JS标准ECMAScript。 基础语法嵌入与基础概念JS可以镶嵌在HTML任何地方，不过一般放在当中，由包含。 JS也可以分布式放在单独的JS文件当中，然后在HTML当中通过引入到当前HTML文件中。 JS的基本语法和Java较为相似，但是可">
+  <meta name="description" content="这是我学习JS的笔记，基于一部分网上的教程和我自己对于编程的立即。在学习JS之前我曾学过Python, C++, Java, HTML, CSS等多种语言，因此这份笔记或许同样适用于有一定基础的人来看，能够帮助你跳过一些千篇一律的无聊内容而单刀直入介绍这门语言的特点。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Blog Design">
-<meta property="og:url" content="http://example.com/2022/06/01/Bolg-Design/index.html">
+<meta property="og:title" content="JS Notes">
+<meta property="og:url" content="http://example.com/2022/06/01/JS-Notes/index.html">
 <meta property="og:site_name" content="Nest of Eric">
-<meta property="og:description" content="JavaScriptJavaScript教程 历史JS被设计出来的初衷是希望能够在静态HTML文件上添加一些动态效果，由网景公司开发。后由微软等公司联合制定JS标准ECMAScript。 基础语法嵌入与基础概念JS可以镶嵌在HTML任何地方，不过一般放在当中，由包含。 JS也可以分布式放在单独的JS文件当中，然后在HTML当中通过引入到当前HTML文件中。 JS的基本语法和Java较为相似，但是可">
+<meta property="og:description" content="这是我学习JS的笔记，基于一部分网上的教程和我自己对于编程的立即。在学习JS之前我曾学过Python, C++, Java, HTML, CSS等多种语言，因此这份笔记或许同样适用于有一定基础的人来看，能够帮助你跳过一些千篇一律的无聊内容而单刀直入介绍这门语言的特点。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-05-31T19:06:00.000Z">
-<meta property="article:modified_time" content="2022-05-31T19:07:16.658Z">
+<meta property="article:modified_time" content="2022-06-02T15:02:24.721Z">
 <meta property="article:author" content="Eric CUI">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/2022/06/01/Bolg-Design/">
+<link rel="canonical" href="http://example.com/2022/06/01/JS-Notes/">
 
 
 <script id="page-configurations">
@@ -55,7 +55,7 @@
   };
 </script>
 
-  <title>Blog Design | Nest of Eric</title>
+  <title>JS Notes | Nest of Eric</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ND3EESGQLX"></script>
     <script>
@@ -151,10 +151,6 @@
     </header>
 
     
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
 
 
     <main class="main">
@@ -169,7 +165,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/06/01/Bolg-Design/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/06/01/JS-Notes/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -182,7 +178,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Blog Design
+          JS Notes
         </h1>
 
         <div class="post-meta">
@@ -191,12 +187,19 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2022-06-01 03:06:00 / Modified: 03:07:16" itemprop="dateCreated datePublished" datetime="2022-06-01T03:06:00+08:00">2022-06-01</time>
+              <time title="Created: 2022-06-01 03:06:00" itemprop="dateCreated datePublished" datetime="2022-06-01T03:06:00+08:00">2022-06-01</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-06-02 23:02:24" itemprop="dateModified" datetime="2022-06-02T23:02:24+08:00">2022-06-02</time>
+              </span>
 
           
+            <div class="post-description">这是我学习JS的笔记，基于一部分网上的教程和我自己对于编程的立即。在学习JS之前我曾学过Python, C++, Java, HTML, CSS等多种语言，因此这份笔记或许同样适用于有一定基础的人来看，能够帮助你跳过一些千篇一律的无聊内容而单刀直入介绍这门语言的特点。</div>
 
         </div>
       </header>
@@ -242,7 +245,10 @@
     <a href="/2022/05/31/About-Me/" rel="prev" title="About Me">
       <i class="fa fa-chevron-left"></i> About Me
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2022/06/02/Web-3-0/" rel="next" title="Web 3.0">
+      Web 3.0 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -315,7 +321,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -325,6 +331,10 @@
 
 
       </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
 
     </div>
   </aside>

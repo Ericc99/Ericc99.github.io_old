@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -91,8 +91,6 @@
   </style>
 </noscript>
 
-<link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
-<script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -149,10 +147,6 @@
     </header>
 
     
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
 
 
     <main class="main">
@@ -166,7 +160,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/06/01/Bolg-Design/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/06/02/Web-3-0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -180,7 +174,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022/06/01/Bolg-Design/" class="post-title-link" itemprop="url">Blog Design</a>
+            <a href="/2022/06/02/Web-3-0/" class="post-title-link" itemprop="url">Web 3.0</a>
         </h2>
 
         <div class="post-meta">
@@ -191,7 +185,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2022-06-01 03:06:00 / Modified: 03:07:16" itemprop="dateCreated datePublished" datetime="2022-06-01T03:06:00+08:00">2022-06-01</time>
+              <time title="Created: 2022-06-02 23:03:13 / Modified: 23:06:54" itemprop="dateCreated datePublished" datetime="2022-06-02T23:03:13+08:00">2022-06-02</time>
             </span>
 
           
@@ -205,24 +199,87 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h1><p><a target="_blank" rel="noopener" href="https://www.liaoxuefeng.com/wiki/1022910821149312">JavaScript教程</a></p>
-<h2 id="历史"><a href="#历史" class="headerlink" title="历史"></a>历史</h2><p>JS被设计出来的初衷是希望能够在静态HTML文件上添加一些动态效果，由网景公司开发。后由微软等公司联合制定JS标准ECMAScript。</p>
-<h2 id="基础语法"><a href="#基础语法" class="headerlink" title="基础语法"></a>基础语法</h2><h3 id="嵌入与基础概念"><a href="#嵌入与基础概念" class="headerlink" title="嵌入与基础概念"></a>嵌入与基础概念</h3><p>JS可以镶嵌在HTML任何地方，不过一般放在<head>当中，由<script></script>包含。</p>
-<p>JS也可以分布式放在单独的JS文件当中，然后在HTML当中通过<script src = “./Content.js”></script>引入到当前HTML文件中。</p>
-<p>JS的基本语法和Java较为相似，但是可以忽略分号，JS编译器会自动添加。</p>
-<p>JS是一种大小写敏感的语言，需要注意大小写的区分。</p>
-<h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><p><strong>Number</strong></p>
-<p>JS中不做浮点和整数的区分，统一称为Number，并且可以无差别进行四则运算及余数等。</p>
-<p>但要注意的是浮点数的比较，浮点数在进行运算时无限循环小数会无法精确表示而产生误差，因此比较需要通过比较两者之间差的绝对值与一个阈值来判断两者是否相等。</p>
-<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">Math</span>.<span class="title function_">abs</span>(<span class="number">1</span>/<span class="number">3</span>-(<span class="number">1</span>-<span class="number">2</span>/<span class="number">3</span>)) &lt; <span class="number">0.00000001</span> <span class="comment">//true</span></span><br></pre></td></tr></table></figure>
+          <p>最近看到了不少关于Web3.0的推送，感觉还蛮有意思的。想要顺手了解一下这是什么概念，然后发现貌似和区块链、虚拟货币有点关系，也就继续看看。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/06/02/Web-3-0/">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
 
-<p><strong>String</strong></p>
-<p>JS中字符串由单引号组’’或双引号组””括起来。</p>
-<p><strong>Boolean</strong></p>
-<p>有true和false两种，可进行常见逻辑运算如&amp;&amp;，||和！等。</p>
-<p>需要注意的是JS当中的等于逻辑运算符分两种，&#x3D;&#x3D;会<strong>自动进行数据类型转换</strong>再比较，而&#x3D;&#x3D;&#x3D;则<strong>不会进行数据类型转换</strong>，即在数据类型不同的时候会直接返回false。因此如果使用&#x3D;&#x3D;有时会出现匪夷所思的结果，比方说某字符的ASCII编码和当前数字恰巧相等，则会返回true。</p>
-<p>NaN是一个特殊的Number，和所有值都不相等，包括他自己，而唯一检验NaN的方法是使用函数isNaN()，即isNaN(NaN)会返回true。</p>
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
 
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/06/01/JS-Notes/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Eric CUI">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nest of Eric">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/06/01/JS-Notes/" class="post-title-link" itemprop="url">JS Notes</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-06-01 03:06:00" itemprop="dateCreated datePublished" datetime="2022-06-01T03:06:00+08:00">2022-06-01</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-06-02 23:02:24" itemprop="dateModified" datetime="2022-06-02T23:02:24+08:00">2022-06-02</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>这是我学习JS的笔记，基于一部分网上的教程和我自己对于编程的立即。在学习JS之前我曾学过Python, C++, Java, HTML, CSS等多种语言，因此这份笔记或许同样适用于有一定基础的人来看，能够帮助你跳过一些千篇一律的无聊内容而单刀直入介绍这门语言的特点。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/06/01/JS-Notes/">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -272,7 +329,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-06-02 22:40:56" itemprop="dateModified" datetime="2022-06-02T22:40:56+08:00">2022-06-02</time>
+                <time title="Modified: 2022-06-02 22:56:09" itemprop="dateModified" datetime="2022-06-02T22:56:09+08:00">2022-06-02</time>
               </span>
 
           
@@ -286,33 +343,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="About-Me"><a href="#About-Me" class="headerlink" title="About Me"></a>About Me</h1><p>Hi, this is Eric, a Year 4 HKUST student whom seemingly majored in Electronics but rather have learned plenty of useless things in CS and the Web.</p>
-<p>If you would like to know me better you can go and view my <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/haozhe-cui-36a860171">LinkedIn</a> page. Please forgive my foolish if you found my life experience so far has not been so impressive to you.</p>
-<p>I started this blog to share what I know, and record my life. I know blog is already kinda old-school but it felt safe to know that I still have a little corner in this sofisticated world where I get to write my original stories. And also made me slowly aware that sometimes, it is not about you, sharing is all we can and all we need to do.</p>
-
-        <div id="aplayer-vSIiSoFE" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
-            <pre class="aplayer-lrc-content"></pre>
-        </div>
-        <script>
-          var ap = new APlayer({
-            element: document.getElementById("aplayer-vSIiSoFE"),
-            narrow: false,
-            autoplay: false,
-            showlrc: false,
-            music: {
-              title: "City of Stars",
-              author: "Ryan Gosling & Emma Stone",
-              url: "COS.mp3",
-              pic: "/2022/05/31/About-Me/COS.png",
-              lrc: ""
-            }
-          });
-          window.aplayers || (window.aplayers = []);
-          window.aplayers.push(ap);
-        </script>
-
-
-
+          <p>Just a brief introduction of myself. Helper to decide if you are to read my compositions or not by providing you a better understanding of my cultural background and writing motivations.</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/05/31/About-Me/">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -393,7 +432,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -403,6 +442,10 @@
 
 
       </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
 
     </div>
   </aside>
